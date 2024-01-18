@@ -28,5 +28,18 @@ function countdown() {
         intervalloDiTempo--
     }
 
-    console.log(intervalloDiTempo)
+    // console.log(intervalloDiTempo)
+
+
+    //moltiplico 60s per 60m (i secondi in un'ora)
+    const ore = Math.floor(intervalloDiTempo / (60 * 60))
+    // console.log(ore)
+    const minuti = Math.floor(intervalloDiTempo % (60 * 60) / 60)
+    // console.log(minuti)
+    const secondi = Math.floor(intervalloDiTempo % 60)
+    // console.log(secondi)
+
+    console.log(ore, minuti, secondi)
+
+    countdownHtml.innerHTML = `${ore}:${minuti}:${secondi}`
 }

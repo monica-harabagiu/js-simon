@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(32, 0, 63);
+    color: white;
+}
+
+.flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    width: 50%;
+    margin: 250px auto;
+}
+
+.border {
+    width: 60%;
+    margin: 50px auto;
+    border: 1px solid white;
+    border-radius: 20px;
+
+}
+
+#countdown {
+    font-size: 5rem;
+    padding-block: 20px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+
+    }
+
+    70% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(0.95);
+
+    }
+}
